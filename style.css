@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    width: 100%;
+    height: 100vh;
+    background: #FFB4B4;
+    position: relative;
+    font-family: Poppins;
+}
+.box {
+    width: 500px;
+    min-height: 400px;
+    background: #FFF;
+    top: 50%;
+    left:50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    border-radius: 10px;
+    text-align: center;
+    padding: 50px ;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+.box h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.box h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    color:#ff2166;
+    font-weight: 500;
+}
+
+.box h1 span {
+    font-size: 22px;
+    color:#555;
+}
+
+.box b {
+   
+    font-weight: 600;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.box p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.box .btn {
+    display: block;
+    cursor: pointer;
+    margin : 30px auto;
+    padding: 12px 30px;
+    background: #ff2166;
+    border: 0;
+    color:#FFF;
+    outline: 0;
+    box-shadow: 0 10px 10px  rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+}
+
+.rippon-container {
+    width: 150px;
+    height:150px;
+    overflow: hidden;
+    top: -10px;
+    left: -10px;
+    position: absolute;
+}
+
+.rippon-container::before ,.rippon-container::after {
+    content: '';
+    width: 9px;
+    height: 9px;
+    background: #ff2166;
+    position: absolute;
+    z-index: -1;
+}
+.rippon-container::before {
+    top: 0;
+    right: 0;
+}
+
+.rippon-container::after {
+    bottom: 0;
+    left: 0;
+}
+
+.rippon {
+    width: 225px;
+    font-size: 15px;
+    text-align: center;
+    background: #ff2166;
+    position: absolute;
+    color: #FFF;
+    padding: 8px 0;
+    transform:rotate(-45deg);
+    right: -17%;
+    top:27%;
+
+}
